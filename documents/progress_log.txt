@@ -1,0 +1,79 @@
+Wed_16.3 Report
+
+The following classes have been implemented: Card, CardDeck, Table, Player, HumanPlayer, Move, Round, Game, FileManager.
+Apart from the last three classes, these classes are fully implemented and are unlikely to be changed.
+Additionally, the ComputerPlayer class has been added, but the central makeMove function has not been implemented.
+
+All the methods in the first six classes are fully implemented and tested.
+For the Card, Move, and Player class, companion objects are added with factory method for creation and verification. This functionality has been tested.
+For the CardDeck, Table, and Player class, the addition and removal of cards (on hand, in pile, in deck, on table) have been tested.
+For the HumanPlayer class, the choosing of a card and making moves out of chosen cards have been tested.
+For the Round class, the response to a move, ending and starting of a round have been tested.
+The functionality of Game class has been implemented but not tested, the functionality of FileManager has yet to be fully implemented.
+
+No particularly difficult problem arose when implementing the first few classes.
+However, when implementing the Game, Round, and FileManager class, there is a problem about design choice, regarding
+how to display (player in view) later on, what information to store, ...
+This problem is currently settled, however, if this design choice is found to be not effective later on, this problem may be revisited.
+
+The time spent was not accurately recorded. However, it is probably about 60 hours.
+
+Currently, I am still ahead of the project plan. However, this is reasonable to me because I decided to work on the ComputerPlayer class later on,
+so other parts of the project should be completed sooner.
+
+
+Wed_30.3 Report
+
+The classes for graphic user interface are implemented with a central CasinoApp object, including GameHandler, SceneHandler and ExceptionHandler.
+Additionally, a small package for elements in a scene is added, with CardLabel, PlayerPane, and ScorePane classes.
+Some modifications have also been made to mainly Game, FileManager and Round class to adjust with the functionalities.
+
+Almost all functionalities necessary for the game have been implemented, apart from functionalities regarding computer players and game log.
+These functionalities mostly involve presenting the previously implemented game logic in the graphical user interface.
+Hence, these functionalities now allow an almost complete user experience from the menu scene to scene in a round.
+These functionalities have been manually tested.
+
+There have been some problems in this phase.
+One such problem is the various situations that the program may encounter during the user experience.
+For example, the file of the game will be saved automatically if the user quit, but these situations can arise:
+  1) The user is only at the menu scene or the add player scene. In this case there is no new game, so the previous game must be maintained.
+  2) The user quit when the previous game has just ended. In this case, no game is saved, and there shall be no previous game.
+  3) The user quit immediately after the round ends. In this case, when loading the previous game, the computer shall start a new round immediately.
+Fortunately, this problem is now solved, but there is some trade-off between the thorough functionality and style.
+Another problem is with the scalability of the graphics.
+The current graphical design work well with the set width and height, but they cannot be resized easily.
+This problem is partly solved, as the menu and add player scene can be resized decently, but the main scene is yet to be configured like that.
+
+The time spent was not accurately recorded. However, it is probably about 60 hours.
+
+Currently, I am keeping up with the project plan. Although the aspects involving the computer players are pushed towards the end,
+the estimated time used for graphic user interface (3 weeks) is maintained.
+For the rest of the project, I will mainly focus on the aspects involving the computer players.
+
+
+Wed_13.4 Report
+
+The ComputerPlayer class and ComputerPlayer Object were implemented in full.
+To support the making moves function of Computer players, a new class Grader was implemented. This class is complete in terms of functionalities,
+but new strategies can be added.
+To allow more variances in types of Computer players, the case objects Human, Computer and class PlayerType is replaced with Strings, and other functions.
+Some modifications to other classes have been made to accommodate the changes.
+
+The functionalities to find all moves and grade moves have been implemented and tested.
+The missing functions regarding the Computer Players have been implemented in GUI.
+These functionalities have been mannually tested. Its efficiency was also tested by using scala reply and measure the time difference from start to end of functions.
+
+There have been many problems in this phase.
+The algorithms to help the Computer players find and grade moves are difficult by themselves, with many aspects to be taken into account,
+including the use of recursive functions, dividing tasks, time efficiency and effectiveness.
+For example, the task of finding all moves are made more challenging by the fact that it was not just finding the moves with the most cards,
+but all moves have to be considered. This problem is solved by first finding the component captures, then stacking them together without requiring paramount time cost.
+Also, the algorithm to avoid easy sweeps is quite complex too, as the cards that the players have "seen" should also be taken into account.
+Implementing the aspects relating to ComputerPlayer is less challenging in comparison. But the problem now is how to run the computer players smoothly.
+This problem is yet to be solved.
+
+The time spent was not accurately recorded. However, it is probably about 63 hours.
+
+Currently, I am keeping up with the project plan. The main task for the last two weeks would be preparing the necessary documents, commmenting and "cleaning" the codes.
+However, a few more additions should be made to improve the projects, such as a "rule" button, adding some strategies, ...
+The App will also need extensive testing to recognize and fix any potential bugs.

@@ -1,0 +1,132 @@
+CASINO Save file
+
+#game metadata
+CardsInDeck: d8h5cqd5c6ckc7c9s9hqdah4h6cjh8s8h3c8h9s2c4s6d3d6h0h7s4c0sah2s5s7sqd0d9s0haskd7dkc2hjs3djsjdqd4c5cahkd2c3
+CardsOnTable: 
+CurrentDealer: 6
+CurrentTurn: 1
+CurrentView: 1
+CurrentLastCapture: 10
+
+#comments
+
+#player
+Name: me
+TypeName: human
+Order: 0
+Score: 6
+Sweep: 0
+Hand: 
+Pile: 
+Seen: 
+
+#player
+Name: Tonia37@
+TypeName: careful computer
+Order: 1
+Score: 10
+Sweep: 0
+Hand: 
+Pile: 
+Seen: 
+
+#player
+Name: TvT
+TypeName: fair computer
+Order: 2
+Score: 6
+Sweep: 0
+Hand: 
+Pile: 
+Seen: 
+
+#player
+Name: ImSoBadAtThis
+TypeName: fair computer
+Order: 3
+Score: 5
+Sweep: 0
+Hand: 
+Pile: 
+Seen: 
+
+#player
+Name: Tonia37@
+TypeName: fair computer
+Order: 4
+Score: 10
+Sweep: 0
+Hand: 
+Pile: 
+Seen: 
+
+#player
+Name: ImSoBadAtThis
+TypeName: bold computer
+Order: 5
+Score: 1
+Sweep: 0
+Hand: 
+Pile: 
+Seen: 
+
+#player
+Name: TvT
+TypeName: careful computer
+Order: 6
+Score: 11
+Sweep: 0
+Hand: 
+Pile: 
+Seen: 
+
+#player
+Name: Jacky7^^%
+TypeName: bold computer
+Order: 7
+Score: 11
+Sweep: 0
+Hand: 
+Pile: 
+Seen: 
+
+#player
+Name: UwU
+TypeName: immediate computer
+Order: 8
+Score: 6
+Sweep: 0
+Hand: 
+Pile: 
+Seen: 
+
+#player
+Name: TvT
+TypeName: fair computer
+Order: 9
+Score: 8
+Sweep: 0
+Hand: 
+Pile: 
+Seen: 
+
+#player
+Name: Zuru**
+TypeName: lookahead computer
+Order: 10
+Score: 4
+Sweep: 0
+Hand: 
+Pile: 
+Seen: 
+
+#player
+Name: Anthon112#
+TypeName: lookahead computer
+Order: 11
+Score: 5
+Sweep: 0
+Hand: 
+Pile: 
+Seen: 
+
