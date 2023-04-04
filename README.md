@@ -11,7 +11,7 @@ The project aims to recreate real-life Casino card game following Finnish rules.
 * Functionality to save and load the game state into/from a file
 
 ## Implementation
-The project includes some complex algorithms to meet the requirements.
+The project includes some complex algorithms to meet the requirements. The project document will include and explain in details the implementation and algorithms used. Major algorithms are:
 
 ### Validating moves
 Each turn, the player always plays one card to the table. If the player captures a card or cards, the player put the card played and the card (s) captured in a separate pile. If no card is captured, the player plays his or her card on the table face up to be captured later. A played card can capture:
@@ -20,6 +20,11 @@ Each turn, the player always plays one card to the table. If the player captures
 card
 * Several cards or sets of cards that satisfy conditions 1 and/or 2 above
 
-To validate user's moves, the program find all possible moves with the played card and the table, and checks if the player's move is among them. To find all possible moves with the played card and the table, the algorithm proceeds as following:
+To validate user's moves, the program find all possible moves with the played card and the chosen cards to be taken, and checks if the player's move is among them. To find all possible moves with the played card and the the chosen cards, the algorithm proceeds as following:
 * Include the simple Play move (no taken cards, the player simply leaves card on table)
-* 
+* Use Subset-Sum algorithm to find all the smallest subsets of cards in the chosen cards which sums up to value of the played card
+* Stack non-overlapping subsets
+
+This algorithm is superior to following algorithms in terms of accuracy: checkin total sum modulo of value of the played card, subarray sum algorithm.
+
+### Computer-controlled players
