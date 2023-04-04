@@ -25,6 +25,12 @@ To validate user's moves, the program find all possible moves with the played ca
 * Use Subset-Sum algorithm to find all the smallest subsets of cards in the chosen cards which sums up to value of the played card
 * Stack non-overlapping subsets
 
-This algorithm is superior to following algorithms in terms of accuracy: checkin total sum modulo of value of the played card, subarray sum algorithm.
+This algorithm is superior to following algorithms in terms of accuracy: checking total sum modulo of value of the played card, subarray sum algorithm. Nevertheless, the algorithm can be improved by switching from Power Set to Dynamic Programming to implement Subset-Sum Algorithm.
 
 ### Computer-controlled players
+The computer-controlled players use the aforementioned algorithm to find all possible moves with the player's cards and the cards on table. However, the goal is to create computer-controlled players that use strategies to decide which move to choose and create different types of players that use different strategies or have different preferences.
+
+This goal is achieved with a "grading" system that is similar to a linear equation. In the grading system, there are several strategies which assess the move separately and give from it a fixed amount of points (positive & negative). The points awarded by each strategy is multiplied with a corresponding coefficient for the strategy, and then summed up to give a final point for the move. The set of coefficients for each strategy differs between different types of players. Thus, we can create infinitely many types of players by simply changing the coefficients.
+
+# Details
+Further details of gameplay, the programme implementation, data structures and algorithms, as well as testing are available in the [Project Document](https://github.com/nghivo94/casino/blob/main/documents/Project%20Document.pdf).
