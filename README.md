@@ -32,5 +32,5 @@ The computer-controlled players use the aforementioned algorithm to find all pos
 
 This goal is achieved with a "grading" system that is similar to a linear equation. In the grading system, there are several strategies which assess the move separately and give from it a fixed amount of points (positive & negative). The points awarded by each strategy is multiplied with a corresponding coefficient for the strategy, and then summed up to give a final point for the move. The set of coefficients for each strategy differs between different types of players. Thus, we can create infinitely many types of players by simply changing the coefficients.
 
-# Details
+## Details
 Further details of gameplay, the programme implementation, data structures and algorithms, as well as testing are available in the [Project Document](https://github.com/nghivo94/casino/blob/main/documents/Project%20Document.pdf).
